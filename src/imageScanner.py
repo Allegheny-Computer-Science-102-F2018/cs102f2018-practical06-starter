@@ -40,7 +40,7 @@ def computeSnow(cam): # works the image algorithm
         for j in range(cam.shape[1]): # columns
             #print(i,j,cam[i,j,0],cam[i,j,1],cam[i,j,2])
             #Check if red, green, and blue pixels are > t for each i,j location:
-            if (cam[i,j,0] > t) and (cam[i,j,1] > t) and (cam[i,j,2] > t): # the Red Green Blue values (channels of color)
+            if (cam[i,j,0] > t) and (cam[i,j,1] > t) and (cam[i,j,2] > t): # the Red Green Blue values (channels of colour)
 
                 countSnow = countSnow + 1
     return countSnow
@@ -67,12 +67,12 @@ def main(in_file1,in_file2=None): # lead function
 
 # unblock this section of code when ready to run the getAvgRGB() function
 #    colCount1_list = getAvgRGB(ima1)
-#    print("  *",in_file1, "   The average RGB colors are the following : ", colCount1_list)
+#    print("  *",in_file1, "   The average RGB colours are the following : ", colCount1_list)
 #
 #    if in_file2 != None:
 #            ima2 = plt.imread(in_file2)   #Read in image
 #            colCount2_list = getAvgRGB(ima2)
-#            print("  *",in_file2, "   The average RGB colors are the following : ", colCount2_list)
+#            print("  *",in_file2, "   The average RGB colours are the following : ", colCount2_list)
 #    print("  Program finished. (Yey!)")
 #end of main()
 
